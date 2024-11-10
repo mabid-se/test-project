@@ -1,6 +1,8 @@
 import ZipCodesList from "@/app/_components/ZipCodesList";
 import { getStateKPIsBySate } from "@/services/ZipCodesKPI";
 
+export const dynamic = "force-dynamic";
+
 const Home = async () => {
   const stateKPIsData = await getStateKPIsBySate("Alaska");
 
